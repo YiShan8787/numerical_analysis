@@ -1,2 +1,2 @@
 # numerical_analysis
- a detailed tutorial
+ a detailed course about numerical
