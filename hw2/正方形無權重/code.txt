@@ -1,0 +1,5 @@
+[k,Qt,Px,Py]=textread('data.txt','%f%f%f%f');
+pgon = polyshape([0 10 10 0],[0 0 10 10]);
+plot(pgon);
+hold on;
+plot(Px,Py,'.')

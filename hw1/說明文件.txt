@@ -1,0 +1,7 @@
+.c檔為C語言程式，可以輸出txt檔
+
+matlab code.txt 為matlabcode，可以輸出gif檔(需要data.txt)
+
+graphical.py 為python程式，可以用2D newton直接在空間中作圖
+
+其他圖片為有測試過的資料

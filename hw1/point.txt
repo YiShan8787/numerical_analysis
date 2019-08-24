@@ -1,0 +1,29 @@
+%%5­Ó
+x=[-0.738094,104.337315,50.508636,21.147327,-0.164827]
+y=[28.538758,26.331375,24.343177,22.551967,20.937779]
+%%13­Ó
+x=[3.01,435.530952,219.275476,111.157737,57.118859,30.139351,16.729048,10.179568,7.192224,6.127846,5.946747,5.941182,5.941176,5.941176];
+y=[3.99,-159.188391,-257.604195,-126.822097,-61.451040,-28.805455,-12.562208,-4.596994,-0.907062,0.480284,0.753706,0.765220,0.765241,0.765241];
+[i,x,y,e]=textread('data.txt','%f%f%f%f')
+for i=1:size(x)
+	figure(i);
+	ezplot('((x-3)*(x-3)/25)+((y-4)*(y-4)/16)-1');
+	hold on;
+	ezplot('((x-3)*(x-3)/4)-((y-4)*(y-4)/9)-1');
+	hold on;
+	plot(x(i),y(i),'.','Markersize',50);
+	frames(i)=getframe(gcf);
+	close all;
+	i=i+1;
+end
+dt=0.5
+
+for i=1:size(x)
+	[image,map]=frame2im(frames(i));
+	[im,map2]=rgb2ind(image,128);
+	if i==1
+		imwrite(im,map2,'mov_pic.gif','gif','writeMode','overwrite','delaytime',dt,'loopcount',inf);
+	else
+		imwrite(im,map2,'mov_pic.gif','gif','writeMode','append','delaytime',dt);
+	end
+end

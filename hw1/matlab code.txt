@@ -1,0 +1,23 @@
+[i,x,y,e]=textread('data.txt','%f%f%f%f')
+for i=1:size(x)
+	figure(i);
+	ezplot('((x-3)*(x-3)/25)+((y-4)*(y-4)/16)-1');
+	hold on;
+	ezplot('((x-3)*(x-3)/4)-((y-4)*(y-4)/9)-1');
+	hold on;
+	plot(x(i),y(i),'.','Markersize',50);
+	frames(i)=getframe(gcf);
+	close all;
+	i=i+1;
+end
+dt=0.5
+
+for i=1:size(x)
+	[image,map]=frame2im(frames(i));
+	[im,map2]=rgb2ind(image,128);
+	if i==1
+		imwrite(im,map2,'mov_pic.gif','gif','writeMode','overwrite','delaytime',dt,'loopcount',inf);
+	else
+		imwrite(im,map2,'mov_pic.gif','gif','writeMode','append','delaytime',dt);
+	end
+end
