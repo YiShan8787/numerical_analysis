@@ -1,0 +1,4 @@
+﻿  main.c
+c:\users\ins303\desktop\numericalanalysis\samplecodes\eigenvalue\powermethod\main.c(32): warning C4101: 'k': 未參考的區域變數
+  PowerMethod.vcxproj -> C:\Users\INS303\Desktop\NumericalAnalysis\SampleCodes\EigenValue\PowerMethod\PowerMethod\Debug\PowerMethod.exe
+  PowerMethod.vcxproj -> C:\Users\INS303\Desktop\NumericalAnalysis\SampleCodes\EigenValue\PowerMethod\PowerMethod\Debug\PowerMethod.pdb (Partial PDB)

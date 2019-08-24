@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gauss_quadrature", "gauss_quadrature.vcproj", "{DF63CEDB-3629-45F9-A276-1F21CE815F5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF63CEDB-3629-45F9-A276-1F21CE815F5E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DF63CEDB-3629-45F9-A276-1F21CE815F5E}.Debug|Win32.Build.0 = Debug|Win32
+		{DF63CEDB-3629-45F9-A276-1F21CE815F5E}.Release|Win32.ActiveCfg = Release|Win32
+		{DF63CEDB-3629-45F9-A276-1F21CE815F5E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

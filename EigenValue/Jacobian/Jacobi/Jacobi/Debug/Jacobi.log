@@ -1,0 +1,6 @@
+﻿  jacobi.c
+d:\數值分析\eigenvalue\jacobian\jacobi.c(92): warning C4101: 't': 未參考的區域變數
+  main.c
+  vec_mtx.c
+  正在產生程式碼...
+  Jacobi.vcxproj -> D:\數值分析\EigenValue\Jacobian\Jacobi\Debug\Jacobi.exe
